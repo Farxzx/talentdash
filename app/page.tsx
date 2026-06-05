@@ -2,37 +2,39 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto p-10">
+    <main className="max-w-6xl mx-auto p-10">
       <h1 className="text-5xl font-bold mb-4">
         TalentDash
       </h1>
 
       <p className="text-lg text-gray-600 mb-8">
-        Compare software engineering compensation across companies,
-        levels, and locations.
+        Compare software engineering salaries across
+        companies, levels, and locations.
       </p>
 
       <div className="flex flex-wrap gap-4">
         <Link
           href="/salaries"
-          className="bg-blue-600 text-white px-6 py-3 rounded-lg"
+          className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700"
         >
           View Salaries
         </Link>
 
         <Link
           href="/compare"
-          className="bg-green-600 text-white px-6 py-3 rounded-lg"
+          className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700"
         >
           Compare Salaries
         </Link>
 
-        <Link
-          href="/companies/google"
-          className="bg-purple-600 text-white px-6 py-3 rounded-lg"
+        <a
+          href="https://www.google.com/search?q=software+engineer+salaries"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700"
         >
           Google Salaries
-        </Link>
+        </a>
       </div>
     </main>
   );

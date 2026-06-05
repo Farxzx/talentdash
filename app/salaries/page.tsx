@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import SalaryTable from "@/components/features/SalaryTable";
+
+export const metadata: Metadata = {
+  title: "Software Engineer Salaries | TalentDash",
+  description:
+    "Compare software engineer salaries across top tech companies, levels, and locations.",
+};
 
 export default function SalariesPage() {
   return (
