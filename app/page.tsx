@@ -26,15 +26,6 @@ export default function Home() {
         >
           Compare Salaries
         </Link>
-
-        <a
-          href="https://www.google.com/search?q=software+engineer+salaries"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700"
-        >
-          Google Salaries
-        </a>
       </div>
     </main>
   );
